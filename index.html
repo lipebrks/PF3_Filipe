@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamento</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <main>
+      <div class="section">
+
+        <div class="title">Poupança</div>
+
+        <div class="input">
+             <input placeholder="Digite seu nome" type="text" id='nome' required="required">
+        </div>
+
+        <div class="input">
+          <input placeholder="Digite o valor que será aplicado mensalmente" type="text" id='ValorAplicadoMensalmentePeloUsuario' required="required" >
+      </div>
+
+        <div class="input">
+          <input  placeholder="Digite o numero de parcelas mensais"  type="number" id='NumeroDeParcelasMensaisAplicadasPeloUsuario'required="required">
+      </div>
+
+        <div class="input">
+          <input  placeholder="Digite a taxa de juros"  type="text" id='TaxaDeJurosAplicadaPeloUsuario'required="required">
+      </div>
+
+        <button type= "button"id='ValorFuturoPoupado' onclick="ValorFuturoPoupado()">Calcular</button>
+
+        <div class="result" id='resultado'></div>
+
+
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
